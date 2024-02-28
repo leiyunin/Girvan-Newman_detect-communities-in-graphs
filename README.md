@@ -1,4 +1,4 @@
-# Girvan-Newman_detect-communities-in-graphs
+# Girvan-Newman detects communities in graphs
 
-# Overriew
+# Overview
 This project explores the implementation of the Girvan-Newman algorithm within the Spark Framework to detect communities in graphs, focusing on social network analysis where nodes represent users and edges indicate mutual business reviews above a certain threshold. By constructing an undirected and unweighted graph based on common business reviews (task1), the project leverages Spark's GraphFrames library for initial community detection, then applies the Girvan-Newman algorithm to further dissect the graph into communities by iteratively calculating edge betweenness and removing edges to enhance modularity. The process iteratively removes edges with the highest betweenness and recalculates modularity after each removal, aiming to partition the network into communities with the highest global modularity, and ceasing only when further partitioning no longer significantly improves modularity. This methodical approach allows for an insightful analysis of community structures within large social networks(task2).
